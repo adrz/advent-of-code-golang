@@ -18,3 +18,10 @@ func ReadFile(pathFromCaller string) string {
 	strContent := string(data)
 	return strings.TrimRight(strContent, "\n")
 }
+
+func Abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
+}
